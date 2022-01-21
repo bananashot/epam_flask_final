@@ -41,7 +41,7 @@ flask db upgrade
 
 - ### Optionally populate the database with sample data from csv files
 ```
-python -m library/sql/populate.py
+python -m spotiflask_app/sql/populate.py
 ```
 
 - ### Run the project locally:
