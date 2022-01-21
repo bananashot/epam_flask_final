@@ -1,0 +1,121 @@
+/* library/static/css/style.css */
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+}
+
+body, h1, h2, h3 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.navbar-custom {
+    background-color: #181818;
+}
+
+.nav > li {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+}
+
+
+a {
+    color: #f3f3f3;
+    background-color: #181818;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ececec;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.pagination-page-info {
+    padding: .6em;
+    padding-left: 0;
+    width: 40em;
+    margin: .5em;
+    margin-left: 0;
+    font-size: 12px;
+}
+
+.pagination-page-info b {
+    color: black;
+    background: #65c265;
+    padding-left: 2px;
+    padding: .1em .25em;
+    font-size: 150%;
+}
+
+.pagination .page-link {
+    color: black;
+}
+
+.pagination .page-link:hover {
+    color: black;
+}
+
+.pagination .page-item.active .page-link {
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background: #38761D;
+}
