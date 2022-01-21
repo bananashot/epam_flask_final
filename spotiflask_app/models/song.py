@@ -5,6 +5,17 @@ import uuid as new_uuid
 
 
 class Song(db.Model):
+    """
+        This class represents a Song. \n
+        Attributes:
+        -----------
+        param order_id: Represents an order of the song within the album
+        type order_id: int
+        param name: Describes name of the Song
+        type name: str max_length=128
+        param duration: Duration of the song
+        type duration: str max_length=5
+    """
     __tablename__ = 'Song'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -27,7 +38,7 @@ class Song(db.Model):
             return duration_value
         raise ValueError('Incorrect duration format "minutes:seconds" required.')
 
-    __table_args__ = (db.UniqueConstraint('id', 'order_id', name='_song_order_id_uc'),)
+    __table_args__ = (db.UniqueConstraint('album_id', 'order_id', name='_song_order_id_uc'),)
 
     def __init__(self, order_id, name, country, uuid):
         self.order_id = order_id

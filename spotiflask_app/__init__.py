@@ -34,7 +34,6 @@ def create_app(config_class=DevelopmentConfig):
     console_handler.setFormatter(formatter)
     console_handler.setLevel(logging.DEBUG)
 
-    # pylint: disable=no-member
     logger = app.logger
     logger.handlers.clear()
     app.logger.addHandler(file_handler)
@@ -49,7 +48,7 @@ def create_app(config_class=DevelopmentConfig):
     Bootstrap(app)
     db.init_app(app)
     api = Api(app)
-    migrate = Migrate(app, db, directory=MIGRATION_DIR)
+    migrate = Migrate(app, db)
 
     from .views.blueprint import home as home_blueprint, discography as discography_blueprint
     app.register_blueprint(home_blueprint)

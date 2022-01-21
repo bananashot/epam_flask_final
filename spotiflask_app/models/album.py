@@ -1,11 +1,23 @@
 from re import match
 from spotiflask_app import db
 from sqlalchemy.orm import validates
-from spotiflask_app.models import band
 import uuid as new_uuid
 
 
 class Album(db.Model):
+    """
+        This class represents an Album. \n
+        Attributes:
+        -----------
+        param name: Describes name of the album
+        type name: str max_length=128
+        param genre: Describes genre of the album
+        type genre: str max_length=30
+        param release_year: Describes release year of the album
+        type release_year: int
+        param songs: list of songs from the album
+        type songs: list[Song] or None
+    """
     __tablename__ = 'Album'
 
     id = db.Column(db.Integer, primary_key=True)
