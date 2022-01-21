@@ -30,6 +30,10 @@ a {
     background-color: #181818;
 }
 
+a:hover {
+    color: #ffffff;
+}
+
 .center {
     margin: auto;
     width: 50%;
@@ -92,28 +96,4 @@ a {
     margin: .5em;
     margin-left: 0;
     font-size: 12px;
-}
-
-.pagination-page-info b {
-    color: black;
-    background: #65c265;
-    padding-left: 2px;
-    padding: .1em .25em;
-    font-size: 150%;
-}
-
-.pagination .page-link {
-    color: black;
-}
-
-.pagination .page-link:hover {
-    color: black;
-}
-
-.pagination .page-item.active .page-link {
-    color: white;
-}
-
-.pagination .page-item.active .page-link {
-    background: #38761D;
 }

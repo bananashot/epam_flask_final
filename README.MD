@@ -1,5 +1,8 @@
 # EPAM final project - Spotiflask App
 
+## With this app you can(as of now):
+- ### View homepage with custom image (¯\_(ツ)_/¯)
+
 ## How to build this project:
 
 - ### Navigate to the project root folder
